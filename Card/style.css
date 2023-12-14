@@ -5,6 +5,7 @@ img{
     width: 320px;
     height: 200px;
     margin-bottom: 0px;
+    border-bottom: 1px solid lightgrey;
 }
 li{
     list-style: none;
