@@ -1,0 +1,64 @@
+#green{
+
+    order: 3;
+    background-color: lightgreen;
+}
+section p{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+li{
+    text-align: center;
+    padding-top: 2ch;
+    margin-top: 10px;
+    list-style: none;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 40%;
+    height: 5ch;
+}
+#yellow{
+    grid-area: amarillo;
+    order: 1;
+    background-color: lightyellow;
+    left: 0;
+}
+#orange p{
+    padding-left: 10%;
+}   
+#orange{
+    grid-area: naranja;
+    order: 4;
+    background-color: rgb(248, 210, 140);
+}
+#red{
+    grid-area: rojo;
+    order: 2;
+    background-color: lightcoral;
+}
+#blue{
+    grid-area: azul;
+    order: 5;
+    background-color: lightblue;
+}
+#green{
+    grid-area: verde;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(3,calc(100vw/3)-50%);
+    grid-template-rows: repeat(3,calc(100vh/3)-50%);
+    grid-template-areas: "verde verde verde "
+    "amarillo rojo azul "
+    "naranja naranja azul "
+
+    ;
+    gap: 5%;
+    height: 100vh;
+    width: 100vw;
+}
