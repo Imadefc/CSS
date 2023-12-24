@@ -1,0 +1,77 @@
+body{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 100vh;
+    justify-items: center;
+}
+
+.gato{
+    background-color: darkgrey;
+    border-radius: 5%;
+}
+.fecha{
+    color: white;
+}
+
+
+h3,h4{
+    margin:0px
+}
+.iconoUsuario{
+    width: 30%;
+    border-radius: 50%;
+    grid-row: span 2;
+}
+.headerFoto{
+    
+    padding-top:2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 10%;
+}
+.cuerpoFoto{
+    padding-left: 3ch;
+    padding-right: 3ch;
+    padding-bottom: 5%;
+}
+.imgFotoGato{
+    width: 100%;
+}
+.corazon{
+    width: 10%;
+}
+.comentario{
+    width: 15%;
+}
+.gatos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    gap: 5%;
+}
+
+
+@media(max-width: 768px){
+   
+    .gatos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:3%
+    }
+    
+    
+}
+@media(max-width: 375px){
+    
+    .gatos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+}
